@@ -119,7 +119,7 @@ st.write("Your age: ",age)
 
 ####Python Code
 #read in the data then create dataframe without na
-s = pd.read_csv("C:/Users/marks/OneDrive/Documents/Programming 2/Final Project/social_media_usage.csv")
+s = pd.read_csv("social_media_usage.csv")
 ss = pd.DataFrame({
     "sm_li":np.where(s["web1h"] == 1, 1, 0),
     "income":np.where(s["income"]> 9,np.nan,s["income"]),
